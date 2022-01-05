@@ -1,0 +1,18 @@
+1. Instalar GIT y configurar
+    - Descargar en https://git-scm.com/
+    - configurar
+        > git config --global user.name "cristian"
+        > git config --global user.email "cchura.cpc@gmail.com"
+-------------  COMANDOS GIT -----------------
+2.1 Clonar el repositorio (si ya existe el repositorio)
+    > git clone direccion_remota
+---------------------------------------------
+2.2 Iniciar un nuevo repositorio (si no existe el repositorio)
+    > git init
+3. Crear un archivo (.gitignore) para ignorar carpetas o archivos
+4. Crear un archivo (README.md) descripción del proyecto
+********************************
+5. Puedes guardar cambios (añadirlos al Index) usando
+    > git add .
+    
+  
