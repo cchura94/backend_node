@@ -15,9 +15,11 @@
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.7",
-    "@babel/preset-env": "^7.16.7"
+    "@babel/preset-env": "^7.16.7",
+    "sequelize-cli": "^6.3.0"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "sequelize": "^6.12.5"
   }
 }
