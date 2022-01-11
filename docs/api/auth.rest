@@ -1,0 +1,18 @@
+### Login al servidor
+POST http://127.0.0.1:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "cristian@gmail.com",
+    "password": "cristian54321"
+}
+
+### Nuevo Usuario
+POST http://127.0.0.1:3000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username": "cristian",
+    "email": "cristian@gmail.com",
+    "password": "cristian54321"
+}

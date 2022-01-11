@@ -1,5 +1,7 @@
 import { Router } from "express"
-import AuthController from "./../controllers/auth.controller"
+import { authController } from "./../controllers/auth.controller"
+
+// const authCont = new AuthController;
 
 export const Route = Router();
 
@@ -12,4 +14,5 @@ Route.get('/', function(req, res){
 });
 
 // auth
-Route.get('/auth/login', AuthController.login)
+Route.post('/auth/login', authController.login)
+Route.post('/auth/register', authController.register)

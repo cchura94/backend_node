@@ -9,6 +9,11 @@ const PORT = process.env.PORT || 3000;
 // iniciando la app de express
 const app = express();
 
+// habilitar json en body
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
+
 // habilitar las rutas
 app.use('/api/v1', Route);
 // app.use('/api/v2', Route2);
