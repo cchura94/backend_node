@@ -1,0 +1,2 @@
+GET http://127.0.0.1:3000/api/v1/usuario
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xMlQwMDoxMjozNS42MDZaIiwiaWF0IjoxNjQxOTQ2MzU1LCJleHAiOjE2NDE5NDk5NTV9.fos3FewdD39D-T9dhSzNoAy7_GzZN4UVMMh42KOImMk

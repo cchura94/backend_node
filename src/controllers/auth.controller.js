@@ -1,13 +1,17 @@
 import models from "./../models"
 import bcrypt from "bcrypt"
+import jwt from "jsonwebtoken"
+import { JWT_EXPIRACION, JWT_SECRET } from "./../config/config"
 
 class AuthController {
 
     async login (req, res) {
-        console.log(req.body)
+        
+        const { email, password } = req.body
+
         let user = await models.User.findOne({
             where: {
-                email: req.body.email
+                email: email
             },
         })
         
@@ -19,11 +23,20 @@ class AuthController {
         }
 
         // verificar la contraseña
-        let correcto = await bcrypt.compare(req.body.password, user.password);
+        let correcto = await bcrypt.compare(password, user.password);
         if(correcto){
+            // generamos el token
+            let payload = {
+                email: user.email,
+                id: user.id,
+                time: new Date()
+            }
+            let token = jwt.sign(payload, JWT_SECRET, {
+                expiresIn: JWT_EXPIRACION
+            });
+
             res.status(200).send({
-                mensaje: 'Autenticado',
-                data: user,
+                access_token: token,
                 error: false
             })
         }else{
