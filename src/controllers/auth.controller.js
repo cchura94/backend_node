@@ -40,7 +40,10 @@ class AuthController {
                 error: false
             })
         }else{
-            return res.status(200).send({mensaje: "Contraseña Incorrecta"});
+            return res.status(200).send({
+                mensaje: "Contraseña Incorrecta",
+                error: true
+            });
         }
 
     }

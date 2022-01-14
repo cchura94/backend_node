@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 // modulos locales
 import { Route } from "./router"
 
@@ -8,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 // iniciando la app de express
 const app = express();
+
+// habilitar cors
+app.use(cors())
 
 // habilitar json en body
 app.use(express.json()) // for parsing application/json
