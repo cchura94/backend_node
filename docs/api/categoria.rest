@@ -1,0 +1,32 @@
+GET http://127.0.0.1:3000/api/v1/categoria
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzowNDoxNy41OTNaIiwiaWF0IjoxNjQyNjMzNDU3LCJleHAiOjE2NDI2MzcwNTd9.y0xZsEP4yUfk26_9V14YXPJnE6eYkEssXeC1HNFJunQ
+
+### Guardar Categoria
+POST http://127.0.0.1:3000/api/v1/categoria
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzowNDoxNy41OTNaIiwiaWF0IjoxNjQyNjMzNDU3LCJleHAiOjE2NDI2MzcwNTd9.y0xZsEP4yUfk26_9V14YXPJnE6eYkEssXeC1HNFJunQ
+
+{
+    "nombre": "ROPA",
+    "detalle": "ROPA para todos"
+}
+
+### Mostrar categoria por id
+GET http://127.0.0.1:3000/api/v1/categoria/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzowNDoxNy41OTNaIiwiaWF0IjoxNjQyNjMzNDU3LCJleHAiOjE2NDI2MzcwNTd9.y0xZsEP4yUfk26_9V14YXPJnE6eYkEssXeC1HNFJunQ
+
+### Modificar categoria por id
+PUT http://127.0.0.1:3000/api/v1/categoria/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzowNDoxNy41OTNaIiwiaWF0IjoxNjQyNjMzNDU3LCJleHAiOjE2NDI2MzcwNTd9.y0xZsEP4yUfk26_9V14YXPJnE6eYkEssXeC1HNFJunQ
+Content-Type: application/json
+
+{
+    "nombre": "MUEBLES DE MADERA",
+    "detalle": "Muebles"
+}
+
+### Eliminar categoria por id
+DELETE http://127.0.0.1:3000/api/v1/categoria/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzowNDoxNy41OTNaIiwiaWF0IjoxNjQyNjMzNDU3LCJleHAiOjE2NDI2MzcwNTd9.y0xZsEP4yUfk26_9V14YXPJnE6eYkEssXeC1HNFJunQ
+
+

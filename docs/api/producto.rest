@@ -1,0 +1,15 @@
+GET http://127.0.0.1:3000/api/v1/producto?page=2&limit=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzo1NTozNi45MTlaIiwiaWF0IjoxNjQyNjM2NTM2LCJleHAiOjE2NDI2NDAxMzZ9.DaJxe3go-6VlMU_ujZRhEnrALj0yu-gl6OysugkI-qw
+
+
+### Guardar producto
+POST http://127.0.0.1:3000/api/v1/producto
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzo1NTozNi45MTlaIiwiaWF0IjoxNjQyNjM2NTM2LCJleHAiOjE2NDI2NDAxMzZ9.DaJxe3go-6VlMU_ujZRhEnrALj0yu-gl6OysugkI-qw
+
+{
+    "nombre": "Comoda",
+    "precio": 400,
+    "stock": 3,
+    "categoriaId": 1 
+}
