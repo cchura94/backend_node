@@ -1,5 +1,8 @@
-import models from "./../models"
 
+import models from "./../models"
+// models.Sequelize.Op
+import { Op } from "sequelize"
+import sequelize,{QueryTypes} from "sequelize"
 class ProductoController {
 
     /**
@@ -13,7 +16,7 @@ class ProductoController {
             let limit = req.query.limit;
             let offset = 0 + (page-1)*limit
 
-            let lista_productos = await models.Producto.findAndCountAll({
+            let lista_productos = await models.producto.findAndCountAll({
                 limit: limit,
                 offset: offset
             });
@@ -35,7 +38,7 @@ class ProductoController {
             const datos = req.body;
             // validar
                 // guardar
-                await models.Producto.create(datos);
+                await models.producto.create(datos);
                 res.status(201).send({
                     mensaje: "Producto registrado",
                     error: false,
@@ -48,6 +51,31 @@ class ProductoController {
                 status: 500
             })
         }
+    }
+    async mostrar(req, res){
+        let id = req.params.id;
+
+        /*
+        const datos = await models.Producto.findAll({
+            where: {
+                id:{
+                    [Op.eq]: id
+                }
+            }
+        })
+        */
+       try{
+        //const [results] = await models.sequelize.query('SELECT * FROM categorias');
+        const [results] = await models.sequelize.query("select * from productos where id=:id", {
+            replacements: { id: id },
+            type: QueryTypes.SELECT
+        });
+        
+           
+           res.send(results);
+       }catch(e){
+            res.send({error: e})
+       }
     }
 
 

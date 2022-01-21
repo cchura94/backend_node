@@ -32,3 +32,4 @@ Route.delete('/categoria/:id', auth, categoriaController.eliminar);
 // rutas producto
 Route.get('/producto', auth, productoController.listaPaginacion)
 Route.post('/producto', auth, productoController.guardar)
+Route.get('/producto/:id', auth, productoController.mostrar)

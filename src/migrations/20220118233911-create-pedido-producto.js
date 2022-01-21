@@ -18,7 +18,7 @@ module.exports = {
       productoId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "Productos",
+          model: "productos",
           key: "id"
         }
       },

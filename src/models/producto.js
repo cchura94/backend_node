@@ -12,12 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       // N:1
-      models.Producto.belongsTo(models.Categoria, {
+      models.producto.belongsTo(models.Categoria, {
         foreignKey: "categoriaId"
       });
 
       // N:M
-      models.Producto.belongsToMany(models.Pedido, {
+      models.producto.belongsToMany(models.Pedido, {
         through: {
           model: 'PedidoProductos',
           scope: {cantidad: 1}
@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
     categoriaId: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Producto',
+    modelName: 'producto',
   });
   return Producto;
 };

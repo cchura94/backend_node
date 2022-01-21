@@ -5,7 +5,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0a
 ### Guardar producto
 POST http://127.0.0.1:3000/api/v1/producto
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0xOVQyMzo1NTozNi45MTlaIiwiaWF0IjoxNjQyNjM2NTM2LCJleHAiOjE2NDI2NDAxMzZ9.DaJxe3go-6VlMU_ujZRhEnrALj0yu-gl6OysugkI-qw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0yMFQyMjo1MTo1MS45NzFaIiwiaWF0IjoxNjQyNzE5MTExLCJleHAiOjE2NDI3MjI3MTF9.KztZ_RoeNGARTuXMgY8hIZ6JIGdhbE3QXOpNi3wlOqc
 
 {
     "nombre": "Comoda",
@@ -13,3 +13,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0a
     "stock": 3,
     "categoriaId": 1 
 }
+
+### Consultas mostrar
+GET http://127.0.0.1:3000/api/v1/producto/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyaXN0aWFuQGdtYWlsLmNvbSIsImlkIjoxLCJ0aW1lIjoiMjAyMi0wMS0yMFQyMzo1ODoyNy42NzRaIiwiaWF0IjoxNjQyNzIzMTA3LCJleHAiOjE2NDI3MjY3MDd9.xK-RbipqfGRd-sp0KoioYCwAhq2iaWDzZe3xNhB_l_M
