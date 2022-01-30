@@ -7,9 +7,9 @@ exports.Route = void 0;
 
 var _express = require("express");
 
-var _auth = require("./../controllers/auth.controller");
-
-/*import { userController } from "./../controllers/user.controller"
+/*
+import { authController } from "./../controllers/auth.controller"
+import { userController } from "./../controllers/user.controller"
 // const authCont = new AuthController;
 import { auth } from "./../middlewares/auth.middleware"
 import * as categoriaController from "./../controllers/categoria.controller"
@@ -37,11 +37,12 @@ Route.get('/', function (req, res) {
     mensaje: "Hola Mundo API",
     error: false
   });
-}); // auth
-
-Route.post('/auth/login', _auth.authController.login);
-Route.post('/auth/register', _auth.authController.register);
+});
 /*
+// auth
+Route.post('/auth/login', authController.login)
+Route.post('/auth/register', authController.register)
+
 Route.get('/usuario', auth, userController.lista);
 
 // rutas categoria
