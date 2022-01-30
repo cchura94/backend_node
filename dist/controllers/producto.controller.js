@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.productoController = void 0;
 
-var _models = _interopRequireDefault(require("./../models"));
+var _models = _interopRequireDefault(require("../models"));
 
 var _sequelize = _interopRequireWildcard(require("sequelize"));
 

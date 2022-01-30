@@ -1,4 +1,4 @@
-import models from "./../models"
+import models from "../models"
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import { JWT_EXPIRACION, JWT_SECRET } from "./../config/config"

@@ -1,5 +1,5 @@
 
-import models from "./../models"
+import models from "../models"
 // models.Sequelize.Op
 import { Op } from "sequelize"
 import sequelize,{QueryTypes} from "sequelize"

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.authController = void 0;
 
-var _models = _interopRequireDefault(require("./../models"));
+var _models = _interopRequireDefault(require("../models"));
 
 var _bcrypt = _interopRequireDefault(require("bcrypt"));
 
