@@ -1,0 +1,5 @@
+
+migrar la BD
+> npx sequelize-cli db:migrate     <---(development)
+> npx sequelize-cli db:migrate --env production    <---(production)
+

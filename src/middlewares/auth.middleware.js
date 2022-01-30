@@ -9,7 +9,7 @@ export const auth = function(req, res, next){
         // token = token.split(" ")[1];
     }
     if(!token){
-        res.status(403).send({
+        return res.status(403).send({
             auth: false,
             mensaje: "No se proporcionó el token de seguridad"
         });
