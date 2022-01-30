@@ -1,7 +1,5 @@
 import { Router } from "express"
-
 import { authController } from "./../controllers/auth.controller"
-/*
 import { userController } from "./../controllers/user.controller"
 // const authCont = new AuthController;
 import { auth } from "./../middlewares/auth.middleware"
@@ -21,7 +19,7 @@ const storage = multer.diskStorage({
   })
   
   const upload = multer({ storage: storage })
-*/
+
 export const Route = Router();
 
 // endpoint
@@ -35,7 +33,7 @@ Route.get('/', function(req, res){
 // auth
 Route.post('/auth/login', authController.login)
 Route.post('/auth/register', authController.register)
-/*
+
 Route.get('/usuario', auth, userController.lista);
 
 // rutas categoria
@@ -49,4 +47,3 @@ Route.delete('/categoria/:id', auth, categoriaController.eliminar);
 Route.get('/producto', auth, productoController.listaPaginacion)
 Route.post('/producto', auth, upload.single("imagen"), productoController.guardar)
 Route.get('/producto/:id', auth, productoController.mostrar)
-*/
