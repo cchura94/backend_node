@@ -16,3 +16,13 @@ Content-Type: application/json
     "email": "cristian@gmail.com",
     "password": "cristian54321"
 }
+
+### registro en el servidor
+POST https://productos-node.herokuapp.com/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username": "cristian",
+    "email": "cristian@gmail.com",
+    "password": "cristian54321"
+}

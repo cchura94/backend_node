@@ -3,3 +3,19 @@ migrar la BD
 > npx sequelize-cli db:migrate     <---(development)
 > npx sequelize-cli db:migrate --env production    <---(production)
 
+------------- HEROKU ---------------------
+heroku create backend_node
+
+$ heroku login
+
+---------
+$ cd my-project/
+$ git init
+$ heroku git:remote -a productos-node
+
+---------------------
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+----------------------
+heroku addons:crete heroku-postgresql:hobby-dev
