@@ -5,6 +5,7 @@ import { userController } from "./../controllers/user.controller"
 import { auth } from "./../middlewares/auth.middleware"
 import * as categoriaController from "./../controllers/categoria.controller"
 import { productoController } from "../controllers/producto.controller"
+import * as reporteController from "./../controllers/reporte.controller"
 import multer from 'multer'
 
 // config multer (para imagenes o archivos)
@@ -43,6 +44,8 @@ Route.get('/categoria/:id', auth, categoriaController.mostrar);
 Route.put('/categoria/:id', auth, categoriaController.modificar);
 Route.delete('/categoria/:id', auth, categoriaController.eliminar);
 
+// reporte productos
+Route.get('/producto/reporte', reporteController.generarPdfListaProductos);
 // rutas producto
 Route.get('/producto', auth, productoController.listaPaginacion)
 Route.post('/producto', auth, upload.single("imagen"), productoController.guardar)
